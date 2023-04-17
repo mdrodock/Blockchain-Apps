@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Five Smart Contracts</title>
+   
+  </head>
+  <body>
+    <h1>Smart Contract Voting</h1>
+    <button id="proposal1">Proposal 1</button>
+    <button id="proposal2">Proposal 2</button>
+    <button id="proposal3">Proposal 3</button>
+    <br /><br />
+    <label for="voters">Voters:</label>
+    <input type="text" id="account-input" name="voters" placeholder="Enter address"/>
+    <br /><br /> 
+    <label for="voters">Proposal:</label>
+    <input type="text" id="proposal-input" placeholder="Enter proposal number"/>
+    <br /><br />
+    <label for="delegate-input">Delegate vote to:</label>
+    <input type="text" id="delegate-input" placeholder="Enter address">
+    <br /><br />
+    <label for="giveright-input">GiveRightToVote:</label>
+    <input type="text" id="giveright-input" placeholder="Enter address">
+    <br /><br />
+    <button id="chairperson">Get Chairperson</button>
+    <div id="chairperson-result"></div>
+    <button id="winnerName">Get Winner Name</button>
+    <div id="winnername-result"></div>
+    <button id="winningProposal">Get Winning Proposal</button>
+    <div id="winningproposal-result"></div>
+
+    
+    <br /><br /> 
+    <h1>Cool Number</h1> 
+
+  <button id= "displayCoolNumber"    onclick="displayCoolNumber();">Display Cool Number</button><br/> 
+
+  <button id = "incrementCoolNumber" onclick="incrementCoolNumber();">Increment Cool Number</button><br/> 
+
+  <button id = "decrementCoolNumber" onclick="decrementCoolNumber();">Decrement Cool Number</button><br/> 
+
+  <button id = "setCoolNumber" onclick="setCoolNumber();">Set Cool Number</button><input type="text" id="CN" name="CN"><br/> 
+
+  <br /><br /> 
+
+  Status: <span id="status">Loading...</span> 
+  <script type="text/javascript"></script> 
+
+  <h1>Random Number Generator</h1> 
+
+  <button onclick="generateRandomNumberAndDisplay()">Generate Random Number</button>
+  <div id="random-number-result"></div>
+  
+
+<h1>Fortune Teller </h1> 
+
+<p>Click the button to get your fortune:</p> 
+
+<button onclick="getFortune()">Get Fortune</button> 
+
+<p id="fortune"></p> 
+
+
+<script src="web3.min.js"></script>
+<script src="web3.js"></script>
+<script src="fivecontracts.js"></script>
+
+  </body>
+</html>
